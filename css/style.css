@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    background: hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(0, 0%, 81%);
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+}
+
+h3+p{
+    color: rgba(207, 207, 207, .5);
+}
+
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+
+.first-card{
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 70px top 20px;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.second-card{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.third-card,.aside-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fourth-card{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.upper-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.lower-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.flex img{
+    border-radius: 100%;
+}
+.last-card{
+    
+    grid-column: span 2;
+}
+
+
+.aside-card .text{
+    word-wrap: break-word;
+}
+
+ .text{
+    color: rgba(207, 207, 207, .7);
+    font-weight: 600;
+}
+
+.text h2{
+    margin: 1rem 0;
+}
+
+.aside-card h2, .third-card h2{
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.aside-card h3,
+.aside-card p,
+.third-card p,
+ .third-card h3{
+    color: gray;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 60%;
+        padding: 1.5rem 0;
+        margin: 0 auto;
+    }
+
+    .main-grid, .lower-grid, .upper-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .aside-card{
+        width: 100%;
+    }
+}
