@@ -15,7 +15,6 @@
 .DS_Store
 
 .prettierignore
-/design
 /.vscode
 /README.md
 /README-template.md
